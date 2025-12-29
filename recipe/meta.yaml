@@ -13,7 +13,7 @@ build:
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -40,8 +40,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/ericmjl/janitor-rs
-  summary: Fast complementary sequence generation for Python, written in Rust
+  home: https://github.com/pyjanitor-devs/janitor-rs
+  summary: Improve perf for pyjanitor functions with Rust
   license: MIT
   license_file:
    - LICENSE
