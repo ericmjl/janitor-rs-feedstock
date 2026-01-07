@@ -1,5 +1,5 @@
 {% set name = "janitor-rs" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/janitor_rs-{{ version }}.tar.gz
-  sha256: 02bac0dfc7edb6105c60c4e5f9c3bd2d879ed26db7bd17462eb11af05ec871fc
+  sha256: 441b1a6f4c2a4d80010704a019147a2b689ca4c6bf325eaf82d9679ed5efc0f3
 
 build:
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -44,8 +44,8 @@ about:
   summary: Improve perf for pyjanitor functions with Rust
   license: MIT
   license_file:
-   - LICENSE
-   - THIRDPARTY.yml
+    - LICENSE
+    - THIRDPARTY.yml
 
 extra:
   recipe-maintainers:
