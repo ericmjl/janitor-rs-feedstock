@@ -3,11 +3,11 @@ About janitor-rs-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/janitor-rs-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ericmjl/janitor-rs
+Home: https://github.com/pyjanitor-devs/janitor-rs
 
 Package license: MIT
 
-Summary: Fast complementary sequence generation for Python, written in Rust
+Summary: Improve perf for pyjanitor functions with Rust
 
 Current build status
 ====================
